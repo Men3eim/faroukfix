@@ -21,10 +21,10 @@ export default function PlumbingPage() {
   const subServices = [
     {
       title: "Emergency Plumbing",
-      description: "24/7 emergency plumbing repairs and leak fixes",
+      description: "24/7 emergency plumbing services for urgent repairs",
       icon: AlertTriangle,
-      features: ["Burst pipes", "Blocked drains", "Water leaks", "No hot water"],
-      image: "/images/plumbing-emergency.png",
+      features: ["Burst pipe repair", "Leak detection", "Drain unblocking", "Emergency callouts"],
+      image: "/images/plumbing-service.jpg",
     },
     {
       title: "Boiler Services",
