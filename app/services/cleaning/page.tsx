@@ -13,7 +13,7 @@ export default function CleaningPage() {
       description: "Comprehensive deep cleaning for move-ins, move-outs, and spring cleaning",
       icon: Zap,
       features: ["Move-in/out cleaning", "Spring cleaning", "Post-construction", "One-time deep clean"],
-      image: "/images/deep-cleaning.png",
+      image: "/images/cleaning-service.jpg",
     },
     {
       title: "Maintenance Cleaning",
