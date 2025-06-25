@@ -15,7 +15,7 @@ const Navbar = dynamic(() => import("@/components/Navbar").then(mod => mod.Navba
 export const metadata: Metadata = {
   title: "FaroukFix - Professional Maintenance Services in W2 & W3 London",
   description:
-    "Expert electrical, plumbing, smart home automation, and cleaning services across W2 & W3 London areas. Available 24/7 for emergencies. Call 07123 456 789",
+    "Expert electrical, plumbing, smart home automation, and cleaning services across W2 & W3 London areas. Available 24/7 for emergencies. Call +44 203 725 1700",
   keywords:
     "maintenance services London, electrician W2 W3, plumber London, smart home automation, cleaning services, emergency repairs, Bayswater, Paddington, Acton, FaroukFix",
   authors: [{ name: "FaroukFix" }],

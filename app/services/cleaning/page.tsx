@@ -103,7 +103,7 @@ export default function CleaningPage() {
                 >
                   <Link href="tel:+442037251700">
                     <Phone className="mr-3 h-6 w-6" />
-                    Call: 07123 456 789
+                    Call: +44 203 725 1700
                   </Link>
                 </Button>
                 <Button
@@ -291,7 +291,7 @@ export default function CleaningPage() {
             <Button size="lg" variant="secondary" asChild className="text-lg px-8">
               <Link href="tel:+442037251700">
                 <Phone className="mr-2 h-5 w-5" />
-                Call: 07123 456 789
+                Call: +44 203 725 1700
               </Link>
             </Button>
             <Button

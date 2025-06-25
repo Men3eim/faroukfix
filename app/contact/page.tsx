@@ -196,7 +196,7 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" type="tel" value={phone} onChange={e => setPhone(e.target.value)} placeholder="07123 456 789" required />
+                    <Input id="phone" type="tel" value={phone} onChange={e => setPhone(e.target.value)} placeholder="+44 203 725 1700" required />
                   </div>
 
                   <div className="space-y-2">
@@ -328,7 +328,7 @@ export default function ContactPage() {
                   <Button asChild size="lg" className="w-full professional-gradient">
                     <Link href="tel:+442037251700">
                       <Phone className="mr-2 h-5 w-5" />
-                      Emergency: 07123 456 789
+                      Emergency: +44 203 725 1700
                     </Link>
                   </Button>
                 </CardContent>

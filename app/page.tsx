@@ -143,7 +143,7 @@ export default function HomePage() {
                   >
                     <Link href="tel:+442037251700">
                       <Phone className="mr-3 h-6 w-6" />
-                      Call Now: 07123 456 789
+                      Call Now: +44 203 725 1700
                     </Link>
                   </Button>
                   <Button
@@ -362,7 +362,7 @@ export default function HomePage() {
                 <Button size="lg" variant="secondary" asChild className="text-lg px-10 py-4 h-auto">
                   <Link href="tel:+442037251700">
                     <Phone className="mr-3 h-6 w-6" />
-                    Emergency: 07123 456 789
+                    Emergency: +44 203 725 1700
                   </Link>
                 </Button>
                 <Button

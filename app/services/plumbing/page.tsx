@@ -117,7 +117,7 @@ export default function PlumbingPage() {
                 <Link href="tel:+442037251700">
 
                   <Phone className="mr-3 h-6 w-6" />
-                  Emergency: 07123 456 789
+                  Emergency: +44 203 725 1700
                 </Link>
               </Button>
               <Button
@@ -332,9 +332,9 @@ export default function PlumbingPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild className="text-lg px-8">
-              <Link href="tel:+447123456789">
+              <Link href="tel:+442037251700">
                 <Phone className="mr-2 h-5 w-5" />
-                Call: 07123 456 789
+                Call: +44 203 725 1700
               </Link>
             </Button>
             <Button
@@ -402,7 +402,7 @@ export default function PlumbingPage() {
               <ul className="space-y-2 text-sm text-slate-600">
                 <li className="flex items-center">
                   <Phone className="mr-2 h-4 w-4" />
-                  07123 456 789
+                  +44 203 725 1700
                 </li>
                 <li className="flex items-center">
                   <Mail className="mr-2 h-4 w-4" />
@@ -425,7 +425,7 @@ export default function PlumbingPage() {
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <Link
-          href="https://wa.me/447123456789"
+          href="https://wa.me/442037251700"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
@@ -436,7 +436,7 @@ export default function PlumbingPage() {
         </Link>
 
         <Link
-          href="tel:+447123456789"
+          href="tel:+442037251700"
           className="group relative flex h-14 w-14 items-center justify-center rounded-full professional-gradient text-white shadow-lg transition-all duration-300 hover:scale-110 hover:professional-glow"
         >
           <Phone className="h-6 w-6" />
