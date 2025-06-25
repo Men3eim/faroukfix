@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 import { FloatingDock } from "@/components/ui/floating-dock"
 import { SectionReveal } from "@/components/ui/section-reveal"
@@ -18,7 +18,7 @@ export function Footer() {
                         alt="FaroukFix Logo"
                         width={220}
                         height={90}
-                        className="object-contain"
+                        className="object-contain drop-shadow-none dark:drop-shadow-[0_0_12px_white]"
                         priority
                     />
                 </div>
@@ -74,6 +74,14 @@ export function Footer() {
                 <li className="flex items-center">
                     <MapPin className="mr-3 h-5 w-5 text-blue-600" />
                     W2 & W3 London
+                </li>
+                <li className="flex items-center space-x-4 mt-4">
+                    <a href="https://www.facebook.com/people/FaroukFix/61577631967868" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 transition-colors">
+                        <Facebook className="h-6 w-6 text-blue-600" />
+                    </a>
+                    <a href="https://www.instagram.com/farouk_fix/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 transition-colors">
+                        <Instagram className="h-6 w-6 text-blue-600" />
+                    </a>
                 </li>
                 </ul>
             </div>

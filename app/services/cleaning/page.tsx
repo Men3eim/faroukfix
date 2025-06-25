@@ -35,7 +35,7 @@ export default function CleaningPage() {
       description: "Specialized cleaning for specific needs and areas",
       icon: Brush,
       features: ["Window cleaning", "Kitchen deep clean", "Bathroom sanitizing", "Office cleaning"],
-      image: "/images/specialized-cleaning.jpg",
+      image: "/images/spesialized-cleaning.png",
     },
   ]
 
@@ -101,7 +101,7 @@ export default function CleaningPage() {
                   asChild
                   className="text-lg px-10 py-4 h-auto professional-gradient hover:professional-glow shadow-lg"
                 >
-                  <Link href="tel:+447123456789">
+                  <Link href="tel:+442037251700">
                     <Phone className="mr-3 h-6 w-6" />
                     Call: 07123 456 789
                   </Link>
@@ -289,7 +289,7 @@ export default function CleaningPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild className="text-lg px-8">
-              <Link href="tel:+447123456789">
+              <Link href="tel:+442037251700">
                 <Phone className="mr-2 h-5 w-5" />
                 Call: 07123 456 789
               </Link>

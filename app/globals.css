@@ -57,6 +57,9 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+  section {
+    @apply bg-background text-foreground;
+  }
 }
 
 @layer utilities {
@@ -283,5 +286,9 @@
     right: 1.5rem !important;
     bottom: 1.5rem !important;
     z-index: 9999 !important;
+  }
+
+  img.dark\:img-invert, .dark img.img-invert {
+    filter: invert(1) hue-rotate(180deg) !important;
   }
 }

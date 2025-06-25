@@ -67,7 +67,7 @@ export default function ContactPage() {
       <section className="py-12 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/professional-team.jpg"
+            src="/images/Professional-team.jpg"
             alt="Contact FaroukFix team"
             fill
             className="object-cover opacity-40"
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   asChild
                   className="text-lg px-10 py-4 h-auto professional-gradient hover:professional-glow shadow-lg"
                 >
-                  <Link href="tel:+447123456789">
+                  <Link href="tel:+442037251700">
                     <Phone className="mr-3 h-6 w-6" />
                     Call Us
                   </Link>
@@ -326,7 +326,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild size="lg" className="w-full professional-gradient">
-                    <Link href="tel:+447123456789">
+                    <Link href="tel:+442037251700">
                       <Phone className="mr-2 h-5 w-5" />
                       Emergency: 07123 456 789
                     </Link>

@@ -141,7 +141,7 @@ export default function HomePage() {
                     asChild
                     className="text-lg px-10 py-4 h-auto professional-gradient hover:professional-glow shadow-lg"
                   >
-                    <Link href="tel:+447123456789">
+                    <Link href="tel:+442037251700">
                       <Phone className="mr-3 h-6 w-6" />
                       Call Now: 07123 456 789
                     </Link>
@@ -327,7 +327,7 @@ export default function HomePage() {
               <SectionReveal direction="down" delay={0.3}>
                 <div className="relative">
                   <Image
-                    src="/images/professional-team.jpg"
+                    src="/images/professional team.png"
                     alt="Professional maintenance team"
                     width={600}
                     height={400}
@@ -360,7 +360,7 @@ export default function HomePage() {
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button size="lg" variant="secondary" asChild className="text-lg px-10 py-4 h-auto">
-                  <Link href="tel:+447123456789">
+                  <Link href="tel:+442037251700">
                     <Phone className="mr-3 h-6 w-6" />
                     Emergency: 07123 456 789
                   </Link>

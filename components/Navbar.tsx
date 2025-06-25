@@ -32,7 +32,7 @@ export function Navbar() {
               alt="FaroukFix Logo"
               width={120}
               height={48}
-              className="object-contain"
+              className="object-contain drop-shadow-none dark:drop-shadow-[0_0_8px_white]"
               priority
             />
           </Link>
@@ -74,7 +74,7 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center space-x-3">
           <Button asChild size="sm" className="professional-gradient hover:professional-glow">
-            <Link href="tel:+447123456789">
+            <Link href="tel:+442037251700">
               <Phone className="mr-2 h-4 w-4" />
               Call Now
             </Link>
@@ -106,7 +106,7 @@ export function Navbar() {
             Contact
           </Link>
           <Button asChild size="sm" className="professional-gradient hover:professional-glow w-full">
-            <Link href="tel:+447123456789" onClick={() => setMobileMenuOpen(false)}>
+            <Link href="tel:+442037251700" onClick={() => setMobileMenuOpen(false)}>
               <Phone className="mr-2 h-4 w-4" />
               Call Now
             </Link>

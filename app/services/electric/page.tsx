@@ -38,7 +38,7 @@ export default function ElectricPage() {
       description: "Complete rewiring solutions for older properties",
       icon: Building,
       features: ["Full house rewiring", "Partial rewiring", "Cable upgrades", "Modern standards"],
-      image: "/images/electrical-rewiring.jpg",
+      image: "/images/Rewiring Services.jpg",
     },
   ]
 
@@ -107,7 +107,7 @@ export default function ElectricPage() {
                     asChild
                     className="text-lg px-10 py-4 h-auto professional-gradient hover:professional-glow shadow-lg"
                   >
-                    <Link href="tel:+447123456789">
+                    <Link href="tel:+442037251700">
                       <Phone className="mr-3 h-6 w-6" />
                       Call Now: 07123 456 789
                     </Link>
@@ -300,7 +300,7 @@ export default function ElectricPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-lg px-8">
-                <Link href="tel:+447123456789">
+                <Link href="tel:+442037251700">
                   <Phone className="mr-2 h-5 w-5" />
                   Call: 07123 456 789
                 </Link>

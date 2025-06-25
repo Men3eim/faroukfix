@@ -5,6 +5,7 @@ import { Users, Award, Shield, MapPin, Star, Wrench, Zap, Home, Sparkles } from 
 import Image from "next/image"
 import { FloatingDock } from "@/components/ui/floating-dock"
 import { Footer } from "@/app/components/Footer"
+import Link from "next/link"
 
 export default function AboutPage() {
   return (
@@ -13,7 +14,7 @@ export default function AboutPage() {
       <section className="py-12 md:py-24 relative overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/images/professional-team.jpg"
+            src="/images/about.jpg"
             alt="FaroukFix Team"
             fill
             className="object-cover opacity-40"

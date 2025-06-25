@@ -6,7 +6,7 @@ export function FloatingDock() {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
     <Link
-      href="https://wa.me/447123456789"
+      href="https://wa.me/442037251700"
       target="_blank"
       rel="noopener noreferrer"
       className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
@@ -17,8 +17,8 @@ export function FloatingDock() {
     </Link>
 
     <Link
-      href="tel:+447123456789"
-      className="group relative flex h-14 w-14 items-center justify-center rounded-full professional-gradient text-white shadow-lg transition-all duration-300 hover:scale-110 hover:professional-glow"
+      href="tel:+442037251700"
+      className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
     >
       <Phone className="h-6 w-6" />
     </Link>
