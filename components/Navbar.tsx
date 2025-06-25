@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Phone, Menu } from "lucide-react"
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -25,13 +26,16 @@ export function Navbar() {
     >
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center space-x-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl professional-gradient text-white shadow-lg">
-            <span className="text-lg font-bold">FF</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-xl font-bold text-slate-900">FaroukFix</span>
-            <span className="text-xs text-blue-600 font-medium">Professional Maintenance</span>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/FaroukFix-logo1.png"
+              alt="FaroukFix Logo"
+              width={120}
+              height={48}
+              className="object-contain"
+              priority
+            />
+          </Link>
         </div>
 
         {/* Desktop Nav */}
@@ -50,6 +54,9 @@ export function Navbar() {
           </Link>
           <Link href="/services/cleaning" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">
             Cleaning
+          </Link>
+          <Link href="/about" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">
+            About
           </Link>
           <Link href="/contact" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">
             Contact
@@ -91,6 +98,9 @@ export function Navbar() {
           </Link>
           <Link href="/services/cleaning" className="text-base font-medium text-slate-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>
             Cleaning
+          </Link>
+          <Link href="/about" className="text-base font-medium text-slate-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>
+            About
           </Link>
           <Link href="/contact" className="text-base font-medium text-slate-700 hover:text-blue-600" onClick={() => setMobileMenuOpen(false)}>
             Contact

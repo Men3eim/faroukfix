@@ -17,6 +17,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { SectionReveal } from "@/components/ui/section-reveal"
 
+import { Footer } from "@/app/components/Footer"
+
 export default function PlumbingPage() {
   const subServices = [
     {
@@ -78,7 +80,8 @@ export default function PlumbingPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-cyan-900/70" />
         </div>
-        <div className="container px-4 relative z-10">
+
+        <div className="container px-4 relative z-10 text-center">
           <SectionReveal delay={0.2}>
             <Badge variant="outline" className="mb-4 border-blue-300 text-blue-700 bg-blue-50/90 backdrop-blur-sm">
               <Wrench className="mr-1 h-3 w-3" />
@@ -108,10 +111,12 @@ export default function PlumbingPage() {
               <Button
                 size="lg"
                 asChild
-                className="text-lg px-8 professional-gradient hover:professional-glow shadow-lg"
+
+                className="text-lg px-10 py-4 h-auto professional-gradient hover:professional-glow shadow-lg"
               >
                 <Link href="tel:+447123456789">
-                  <AlertTriangle className="mr-2 h-5 w-5" />
+
+                  <Phone className="mr-3 h-6 w-6" />
                   Emergency: 07123 456 789
                 </Link>
               </Button>
@@ -119,11 +124,13 @@ export default function PlumbingPage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="text-lg px-8 border-white text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm bg-white/10"
+
+                className="text-lg px-10 py-4 h-auto border-white text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm bg-white/10"
               >
                 <Link href="/contact">
                   Get Free Quote
-                  <ArrowRight className="ml-2 h-5 w-5" />
+
+                  <ArrowRight className="ml-3 h-6 w-6" />
                 </Link>
               </Button>
             </div>
@@ -181,6 +188,86 @@ export default function PlumbingPage() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="py-12 md:py-24 bg-gradient-to-br from-blue-50/50 to-slate-50/30">
+        <div className="container px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900 mb-4">Transparent Pricing</h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Clear, upfront pricing for our most popular plumbing services. For a detailed quote, please contact us.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto">
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <AlertTriangle className="h-10 w-10 text-blue-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Emergency Call-Out</CardTitle>
+                <CardDescription className="text-blue-700 font-bold text-2xl">£95</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">24/7 rapid response for urgent plumbing issues.</p>
+              </CardContent>
+            </Card>
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <Droplets className="h-10 w-10 text-blue-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Leak Repair (Minor)</CardTitle>
+                <CardDescription className="text-blue-700 font-bold text-2xl">£85</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">Fixing minor leaks in pipes, taps, or joints.</p>
+              </CardContent>
+            </Card>
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <Droplets className="h-10 w-10 text-blue-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Tap Replacement</CardTitle>
+                <CardDescription className="text-blue-700 font-bold text-2xl">£75</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">Supply and fit new taps for kitchen or bathroom.</p>
+              </CardContent>
+            </Card>
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <Bath className="h-10 w-10 text-blue-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Toilet Repair</CardTitle>
+                <CardDescription className="text-blue-700 font-bold text-2xl">£95</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">Repairing flush, leaks, or blockages in toilets.</p>
+              </CardContent>
+            </Card>
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <Thermometer className="h-10 w-10 text-blue-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Boiler Servicing</CardTitle>
+                <CardDescription className="text-blue-700 font-bold text-2xl">£120</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">Annual service to keep your boiler safe and efficient.</p>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="max-w-2xl mx-auto mt-8 text-center text-slate-600 text-base">
+            <ul className="space-y-2">
+              <li>Prices vary based on complexity and materials.</li>
+              <li>All labour included; parts quoted separately.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
       <section className="py-12 md:py-24 bg-gradient-to-br from-blue-50/50 to-slate-50/30">
         <div className="container px-4">
@@ -227,43 +314,6 @@ export default function PlumbingPage() {
           </div>
         </div>
       </section>
-
-      {/* Pricing Section */}
-      <section className="py-12 md:py-24 bg-gradient-to-br from-blue-50/50 to-slate-50/30">
-        <div className="container px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6 text-slate-900">Transparent Pricing</h2>
-            <p className="text-lg text-slate-600 mb-8">
-              Fair, fixed prices with no hidden costs. All quotes include labor and materials.
-            </p>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card className="hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="text-slate-900">Emergency Call-Out</CardTitle>
-                  <CardDescription className="text-slate-600">24/7 emergency plumbing service</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">£95</div>
-                  <p className="text-sm text-slate-600">First hour, then £75/hour</p>
-                </CardContent>
-              </Card>
-
-              <Card className="hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="text-slate-900">Standard Call-Out</CardTitle>
-                  <CardDescription className="text-slate-600">Regular plumbing work and installations</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">£75</div>
-                  <p className="text-sm text-slate-600">Per hour + materials</p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-12 md:py-24 professional-gradient text-white relative overflow-hidden">
         <div className="absolute inset-0">

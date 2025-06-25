@@ -155,6 +155,10 @@ const config = {
             transform: "translateY(-10px)",
           },
         },
+        scaleIn: {
+          '0%': { transform: 'scale(0.8)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -167,6 +171,7 @@ const config = {
         "meteor-effect": "meteor-effect linear infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
         float: "float 3s ease-in-out infinite",
+        'scale-in': 'scaleIn 0.3s cubic-bezier(0.4,0,0.2,1) both',
       },
     },
   },

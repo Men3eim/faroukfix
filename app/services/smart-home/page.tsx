@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Home, CheckCircle, ArrowRight, Smartphone, Shield,
 import Link from "next/link"
 import Image from "next/image"
 import { SectionReveal } from "@/components/ui/section-reveal"
+import { Footer } from "@/app/components/Footer"
 
 export default function SmartHomePage() {
   const subServices = [
@@ -94,10 +95,10 @@ export default function SmartHomePage() {
                 <Button
                   size="lg"
                   asChild
-                  className="text-lg px-8 professional-gradient hover:professional-glow shadow-lg"
+                  className="text-lg px-10 py-4 h-auto professional-gradient hover:professional-glow shadow-lg"
                 >
                   <Link href="tel:+447123456789">
-                    <Phone className="mr-2 h-5 w-5" />
+                    <Phone className="mr-3 h-6 w-6" />
                     Call: 07123 456 789
                   </Link>
                 </Button>
@@ -105,11 +106,11 @@ export default function SmartHomePage() {
                   size="lg"
                   variant="outline"
                   asChild
-                  className="text-lg px-8 border-white text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm bg-white/10"
+                  className="text-lg px-10 py-4 h-auto border-white text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm bg-white/10"
                 >
-                  <Link href="/contact">
+                  <Link href="mailto:info@faroukfix.com">
                     Free Consultation
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <ArrowRight className="ml-3 h-6 w-6" />
                   </Link>
                 </Button>
               </div>
@@ -164,6 +165,74 @@ export default function SmartHomePage() {
                 </Card>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-12 md:py-24 bg-gradient-to-br from-purple-50/50 to-slate-50/30">
+        <div className="container px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900 mb-4">Transparent Pricing</h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Clear, upfront pricing for our most popular smart home automation services. For a detailed quote, please contact us.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto">
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <Smartphone className="h-10 w-10 text-purple-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Smart Thermostat Installation</CardTitle>
+                <CardDescription className="text-purple-700 font-bold text-2xl">£150</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">Install and configure smart thermostats for energy savings and comfort.</p>
+              </CardContent>
+            </Card>
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <Lightbulb className="h-10 w-10 text-purple-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Smart Lighting Setup (per room)</CardTitle>
+                <CardDescription className="text-purple-700 font-bold text-2xl">£95</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">Automated lighting control for convenience and efficiency.</p>
+              </CardContent>
+            </Card>
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <Camera className="h-10 w-10 text-purple-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Home Security Camera Installation</CardTitle>
+                <CardDescription className="text-purple-700 font-bold text-2xl">£130</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">Professional installation of smart security cameras for peace of mind.</p>
+              </CardContent>
+            </Card>
+            <Card className="group hover-lift border-blue-200/50 bg-white/80 backdrop-blur-sm">
+              <div className="flex justify-center pt-6">
+                <Home className="h-10 w-10 text-purple-600" />
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-lg text-slate-900">Full Home Automation Consultation</CardTitle>
+                <CardDescription className="text-green-600 font-bold text-2xl">FREE</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 text-sm">Expert advice and planning for your complete smart home setup.</p>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="max-w-2xl mx-auto mt-8 text-center text-slate-600 text-base">
+            <ul className="space-y-2">
+              <li>Prices vary based on complexity and materials.</li>
+              <li>All labour included; parts quoted separately.</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -346,95 +415,7 @@ export default function SmartHomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-blue-200/50 py-12 bg-white">
-        <div className="container px-4">
-          <div className="grid gap-8 md:grid-cols-4">
-            <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg professional-gradient text-white">
-                  <span className="text-sm font-bold">FF</span>
-                </div>
-                <span className="text-lg font-bold text-slate-900">FaroukFix</span>
-              </div>
-              <p className="text-sm text-slate-600">Professional smart home automation across W2 & W3 London areas.</p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4 text-slate-900">Smart Home Services</h3>
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li>Home Automation</li>
-                <li>Security Systems</li>
-                <li>Lighting Control</li>
-                <li>Smart Monitoring</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4 text-slate-900">Other Services</h3>
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li>
-                  <Link href="/services/electric" className="hover:text-blue-600 transition-colors">
-                    Electric Work
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/plumbing" className="hover:text-blue-600 transition-colors">
-                    Plumbing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/cleaning" className="hover:text-blue-600 transition-colors">
-                    Cleaning
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4 text-slate-900">Contact</h3>
-              <ul className="space-y-2 text-sm text-slate-600">
-                <li className="flex items-center">
-                  <Phone className="mr-2 h-4 w-4" />
-                  07123 456 789
-                </li>
-                <li className="flex items-center">
-                  <Mail className="mr-2 h-4 w-4" />
-                  info@faroukfix.com
-                </li>
-                <li className="flex items-center">
-                  <MapPin className="mr-2 h-4 w-4" />
-                  W2 & W3 London
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-blue-200/50 mt-8 pt-8 text-center text-sm text-slate-600">
-            <p>&copy; {new Date().getFullYear()} FaroukFix. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-
-      {/* Floating Action Buttons */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-        <Link
-          href="https://wa.me/447123456789"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
-        >
-          <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.108" />
-          </svg>
-        </Link>
-
-        <Link
-          href="tel:+447123456789"
-          className="group relative flex h-14 w-14 items-center justify-center rounded-full professional-gradient text-white shadow-lg transition-all duration-300 hover:scale-110 hover:professional-glow"
-        >
-          <Phone className="h-6 w-6" />
-        </Link>
-      </div>
+      <Footer />
     </div>
   )
 }
