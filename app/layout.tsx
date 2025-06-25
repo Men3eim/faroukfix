@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://faroukfix.com",
     siteName: "FaroukFix",
+    images: [
+      {
+        url: "/images/FaroukFix-logo1.png",
+        width: 1200,
+        height: 630,
+        alt: "FaroukFix Logo",
+      },
+    ],
   },
   robots: {
     index: true,

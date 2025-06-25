@@ -31,7 +31,7 @@ export default function HomePage() {
       description: "Professional electrical services from installations to emergency repairs",
       icon: Zap,
       href: "/services/electric",
-      subServices: ["Emergency electrical", "Installations", "Testing", "Rewiring"],
+      subServices: ["Emergency electrical", "Installations", "Rewiring"],
       image: "/images/electrical-work.jpg",
     },
     {
