@@ -67,8 +67,8 @@ export default function ContactPage() {
       <section className="py-12 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/Professional-team.jpg"
-            alt="Contact FaroukFix team"
+            src="/images/contact.png"
+            alt="Contact FaroukFix"
             fill
             className="object-cover opacity-40"
           />

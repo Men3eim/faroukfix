@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     siteName: "FaroukFix",
     images: [
       {
-        url: "/images/FaroukFix-logo1.png",
+        url: "/images/FaroukFix-fav icon opengraph.png",
         width: 1200,
         height: 630,
-        alt: "FaroukFix Logo",
+        alt: "FaroukFix Open Graph Image",
       },
     ],
   },
