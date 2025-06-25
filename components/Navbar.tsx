@@ -30,8 +30,8 @@ export function Navbar() {
             <Image
               src="/images/FaroukFix-logo1.png"
               alt="FaroukFix Logo"
-              width={120}
-              height={48}
+              width={200}
+              height={80}
               className="object-contain drop-shadow-none dark:drop-shadow-[0_0_8px_white]"
               priority
             />

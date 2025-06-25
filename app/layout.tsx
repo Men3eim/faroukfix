@@ -35,7 +35,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://faroukfix.com",
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: "/images/FaroukFix-fav icon.png",
+  },
 }
 
 export default function RootLayout({
@@ -45,9 +48,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
