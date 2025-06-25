@@ -327,7 +327,7 @@ export default function HomePage() {
               <SectionReveal direction="down" delay={0.3}>
                 <div className="relative">
                   <Image
-                    src="/images/professional team.png"
+                    src="/images/home-maintainance-team.png"
                     alt="Professional maintenance team"
                     width={600}
                     height={400}
