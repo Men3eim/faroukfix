@@ -24,63 +24,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
-      {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-blue-200/50 bg-white/95 backdrop-blur-sm">
-        <div className="container flex h-16 items-center justify-between px-4">
-          <div className="flex items-center space-x-3">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl professional-gradient text-white shadow-lg">
-                <span className="text-lg font-bold">FF</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-slate-900">FaroukFix</span>
-                <span className="text-xs text-blue-600 font-medium">Professional Maintenance</span>
-              </div>
-            </Link>
-          </div>
-
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">
-              Home
-            </Link>
-            <Link
-              href="/services/electric"
-              className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              Electric
-            </Link>
-            <Link
-              href="/services/plumbing"
-              className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              Plumbing
-            </Link>
-            <Link
-              href="/services/smart-home"
-              className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              Smart Home
-            </Link>
-            <Link
-              href="/services/cleaning"
-              className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors"
-            >
-              Cleaning
-            </Link>
-            <Link href="/contact" className="text-sm font-medium text-blue-600">
-              Contact
-            </Link>
-          </nav>
-
-          <Button asChild size="sm" className="professional-gradient hover:professional-glow">
-            <Link href="tel:+447123456789">
-              <Phone className="mr-2 h-4 w-4" />
-              Call Now
-            </Link>
-          </Button>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="py-12 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0">
