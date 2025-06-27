@@ -102,29 +102,29 @@ export default function ElectricPage() {
 
             <SectionReveal delay={0.8}>
                 <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
-                  <Button
-                    size="lg"
-                    asChild
+                <Button
+                  size="lg"
+                  asChild
                     className="text-lg px-10 py-4 h-auto professional-gradient hover:professional-glow shadow-lg"
-                  >
+                >
                     <Link href="tel:+442037251700">
                       <Phone className="mr-3 h-6 w-6" />
                       Call Now: +44 203 725 1700
-                    </Link>
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    asChild
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  asChild
                     className="text-lg px-10 py-4 h-auto border-white text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm bg-white/10"
-                  >
-                    <Link href="/contact">
-                      Get Free Quote
+                >
+                  <Link href="/contact">
+                    Get Free Quote
                       <ArrowRight className="ml-3 h-6 w-6" />
-                    </Link>
-                  </Button>
-                </div>
-              </SectionReveal>
+                  </Link>
+                </Button>
+              </div>
+            </SectionReveal>
           </div>
         </div>
       </section>
